@@ -1,2 +1,7 @@
-# tick-tack-toe
-An implementation of the tic-tac-toe game using a single-page-application framework angular &lt;3 deployed to fireBase
+# Tick-Tack-Toe
+
+A classic game built by web-devs to understand the mechanics
+of a library/framework.
+
+Play with my implementation here.
+https://tick-tac-toe-dac63.web.app/

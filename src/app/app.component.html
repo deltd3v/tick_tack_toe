@@ -1,0 +1,36 @@
+<nb-layout>
+  <nb-layout-header fixed>
+    
+      <h1>Tick Tack Toe</h1>
+     
+  </nb-layout-header>
+
+  <nb-layout-column>
+    
+
+    <h1>Current Player: {{ player }}</h1>
+
+    <button *ngIf="!winner" nbButton outline status="danger" (click)="initNewGame()">
+      Play
+    </button>
+
+    <button nbButton outline status="success" *ngIf="winner" (click)="initNewGame()"> Play Again </button>
+
+    
+    <!-- conditional rendering for winner -->
+    <pre style="font-size:2rem" *ngIf="winner"  ><strong [ngStyle]="{ 'color' : (getWinner() === 'X') ? '#2ce69b' : '#0095ff'}">{{ winner }}</strong> won the game!</pre>
+
+    <!-- squares -->
+    <section class="squares">
+      <app-square
+        *ngFor="let s of squares; let i = index"
+        [symbol]="s"
+        (click)="move(i)"
+      >
+      </app-square>
+    </section>
+
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+ 
+</nb-layout>

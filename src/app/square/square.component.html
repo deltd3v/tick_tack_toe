@@ -1,0 +1,5 @@
+<button nbButton *ngIf="!symbol">{{ symbol }}</button>
+
+<button nbButton hero status="success" *ngIf="symbol == 'X'">{{ symbol }}</button>
+
+<button nbButton hero status="info" *ngIf="symbol == 'O'">{{ symbol }}</button>

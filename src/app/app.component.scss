@@ -1,0 +1,15 @@
+section.squares 
+{
+    margin: 3rem 0rem;
+    /**Dimensions of Grid Cells*/
+    display:grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 0px;
+
+}
+
+app-square {
+     border: 1px lightgray solid;
+     /**Every Square Should Fill In The Grid Cell*/
+     height: 150px;
+}
