@@ -1,4 +1,4 @@
-# Tick-Tack-Toe
+# tick_tack_toe
 
 A classic game built by web-devs to understand the mechanics
 of a library/framework.
